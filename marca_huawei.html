@@ -1,0 +1,153 @@
+<!-- Marca Huawei (marca_huawei.html) -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Huawei - Celulares</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a08561;
+    color: #333;
+}
+
+header {
+    background-image: url(img_marcas/fondo1.jpeg);
+    color: rgb(255, 255, 255);
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.model-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.cellphone {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cellphone:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #ccb26c;
+}s
+
+.cellphone img {
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.cellphone h3 {
+    font-size: 22px;
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 18px;
+    color: #E74C3C;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.back-button {
+    display: inline-block;
+    background-color: #010203;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #0400f0;
+}
+
+</style>
+<body>
+    <header>
+        <h1>Huawei - Celulares</h1>
+    </header>
+
+    <section class="model-list">
+        <div class="cellphone">
+            <img src="img_celulares/huawei1.jpg" alt="Huawei P50 Pro" width ="180" height="220px">
+            <h3>Huawei P50 Pro</h3>
+            <p class="price">$899.99 USD</p>
+            <p>Cámara cuádruple Leica de 50 MP y pantalla OLED de 6.6 pulgadas.</p>
+        </div>
+
+        <div class="cellphone">
+            <img src="img_celulares/huawei2.jpg" alt="Huawei Mate 50 Pro" width ="180" height="220px">
+            <h3>Huawei Mate 50 Pro</h3>
+            <p class="price">$1,199.99 USD</p>
+            <p>Cámara de 50 MP y pantalla OLED de 6.74 pulgadas con frecuencia de 120Hz.</p>
+        </div>
+
+        <div class="cellphone">
+            <img src="img_celulares/huawei3.jpg" alt="Huawei P40 Pro" width ="180" height="220px">
+            <h3>Huawei P40 Pro</h3>
+            <p class="price">$799.99 USD</p>
+            <p>Pantalla OLED de 6.58 pulgadas, cámaras de 50 MP + 12 MP + 40 MP.</p>
+        </div>
+
+        <div class="cellphone">
+            <img src="img_celulares/huawei4.jpg" alt="Huawei Mate 40 Pro" width ="180" height="220px">
+            <h3>Huawei Mate 40 Pro</h3>
+            <p class="price">$999.99 USD</p>
+            <p>Con cámaras de 50 MP y 20 MP, y pantalla OLED de 6.76 pulgadas.</p>
+        </div>
+
+        <div class="cellphone">
+            <img src="img_celulares/huawei5.jpg" alt="Huawei P30 Pro" width ="180" height="220px">
+            <h3>Huawei P30 Pro</h3>
+            <p class="price">$749.99 USD</p>
+            <p>Una cámara increíble de 40 MP con pantalla OLED de 6.47 pulgadas.</p>
+        </div>
+        <div class="cellphone">
+            <img src="img_marcas/huawei.png" alt="Huawei" width="180" height="220px">
+            <a href="index.html" class="back-button">Volver a la Página Principal</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>@copy; 2024 Celulares - Derechos Reservados</p>
+    </footer>
+</body>
+</html>

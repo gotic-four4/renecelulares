@@ -1,0 +1,152 @@
+<!-- Marca Sony (marca_sony.html) -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sony - Celulares</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a08561;
+    color: #333;
+}
+
+header {
+    background-image: url(img_marcas/fondo1.jpeg);
+    color: rgb(255, 255, 255);
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.model-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.cellphone {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cellphone:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #ccb26c;
+}s
+
+.cellphone img {
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.cellphone h3 {
+    font-size: 22px;
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 18px;
+    color: #E74C3C;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.back-button {
+    display: inline-block;
+    background-color: #010203;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #0400f0;
+}
+
+</style>
+<body>
+    <header>
+        <h1>Sony - Celulares</h1>
+    </header>
+
+    <section class="model-list">
+        <div class="cellphone">
+            <img src="img_celulares/sony1.jpg" alt="Sony Xperia 1 II" width ="180" height="220px">
+            <h3>Sony Xperia 1 II</h3>
+            <p class="price">$1,199.99 USD</p>
+            <p>Pantalla OLED 4K de 6.5 pulgadas y cámara triple de 12 MP.</p>
+        </div>
+
+        <div class="cellphone">
+            <img src="img_celulares/sony2.jpg" alt="Sony Xperia 5 II" width ="180" height="220px">
+            <h3>Sony Xperia 5 II</h3>
+            <p class="price">$999.99 USD</p>
+            <p>Pantalla OLED 21:9 y cámaras de 12 MP para grabación profesional.</p>
+        </div>
+
+        <div class="cellphone">
+            <img src="img_celulares/sony3.jpg" alt="Sony Xperia 10 II" width ="180" height="220px">
+            <h3>Sony Xperia 10 II</h3>
+            <p class="price">$499.99 USD</p>
+            <p>Excelente pantalla OLED de 6.0 pulgadas y cámara triple de 12 MP.</p>
+        </div>
+
+        <div class="cellphone">
+            <img src="img_celulares/sony4.jpg" alt="Sony Xperia 1 III" width ="180" height="220px">
+            <h3>Sony Xperia 1 III</h3>
+            <p class="price">$1,299.99 USD</p>
+            <p>Pantalla OLED 4K de 6.5 pulgadas y cámaras de 12 MP + 12 MP + 12 MP.</p>
+        </div>
+
+        <div class="cellphone">
+            <img src="img_celulares/sony5.jpg" alt="Sony Xperia L4" width ="180" height="220px">
+            <h3>Sony Xperia L4</h3>
+            <p class="price">$249.99 USD</p>
+            <p>Pantalla de 6.2 pulgadas y cámara de 13 MP.</p>
+        </div>
+        <div class="cellphone">
+            <img src="img_marcas/sony.png" alt="Sony" width="180" height="220px">
+            <a href="index.html" class="back-button">Volver a la Página Principal</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>@copy; 2024 Celulares - Derechos Reservados</p>
+    </footer>
+</body>
+</html>

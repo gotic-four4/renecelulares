@@ -1,0 +1,153 @@
+<!-- Marca Xiaomi (marca_xiaomi.html) -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Xiaomi - Celulares</title>
+
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a08561;
+    color: #333;
+}
+
+header {
+    background-image: url(img_marcas/fondo1.jpeg);
+    color: rgb(255, 255, 255);
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.model-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.cellphone {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cellphone:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #ccb26c;
+}s
+
+.cellphone img {
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.cellphone h3 {
+    font-size: 22px;
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 18px;
+    color: #E74C3C;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.back-button {
+    display: inline-block;
+    background-color: #010203;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #0400f0;
+}
+
+</style>
+<body>
+    <header>
+        <h1>Xiaomi - Celulares</h1>
+    </header>
+
+    <section class="model-list">
+        <div class="cellphone">
+            <img src="img_celulares/xiaomi1.jpg" alt="Xiaomi Mi 13" width ="180" height="220px">
+            <h3>Xiaomi Mi 13</h3>
+            <p class="price">$799.99 USD</p>
+            <p>Pantalla AMOLED de 6.36 pulgadas y cámara de 50 MP.</p>
+        </div>
+
+        <div class="cellphone">
+            <img src="img_celulares/xiaomi2.jpg" alt="Redmi Note 12" width ="180" height="220px">
+            <h3>Redmi Note 12</h3>
+            <p class="price">$249.99 USD</p>
+            <p>Gran relación calidad-precio, con cámara de 50 MP y pantalla AMOLED.</p>
+        </div>
+
+        <div class="cellphone">
+            <img src="img_celulares/xiaomi3.jpg" alt="Xiaomi Mi 11" width ="180" height="220px">
+            <h3>Xiaomi Mi 11</h3>
+            <p class="price">$749.99 USD</p>
+            <p>Una pantalla AMOLED de 6.81 pulgadas y cámara triple de 108 MP.</p>
+        </div>
+
+        <div class="cellphone">
+            <img src="img_celulares/xiaomi4.jpg" alt="Redmi K40" width ="180" height="220px">
+            <h3>Redmi K40</h3>
+            <p class="price">$399.99 USD</p>
+            <p>Con pantalla AMOLED de 6.67 pulgadas y procesador Snapdragon 870.</p>
+        </div>
+
+        <div class="cellphone">
+            <img src="img_celulares/xiaomi5.jpg" alt="Xiaomi Mi 10" width ="180" height="220px">
+            <h3>Xiaomi Mi 10</h3>
+            <p class="price">$699.99 USD</p>
+            <p>Cámara de 108 MP y pantalla AMOLED de 6.67 pulgadas.</p>
+        </div>
+        <div class="cellphone">
+            <img src="img_marcas/xiaomi.png" alt="Xiaomi" width="180" height="220px">
+            <a href="index.html" class="back-button">Volver a la Página Principal</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>@copy; 2024 Celulares - Derechos Reservados</p>
+    </footer>
+</body>
+</html>
